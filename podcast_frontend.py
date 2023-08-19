@@ -13,7 +13,7 @@ def main():
 
     # Dropdown box
     st.sidebar.subheader("Available Podcasts Feeds")
-    podcast_options = list(available_podcast_info.keys()) + ["New Podcast"]
+    podcast_options = ["New Podcast"] + list(available_podcast_info.keys()) 
     selected_podcast = st.sidebar.selectbox("Select Podcast", options=podcast_options)
 
     if selected_podcast != "New Podcast":
